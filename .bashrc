@@ -102,3 +102,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 export EDITOR=vim
+
+# call private bash libraries.
+. _bash_lib/_lib.sh
+if [ -f ~/_bash_lib/_lib.sh ]; then
+    . ~/_bash_lib/_lib.sh
+fi
