@@ -1,6 +1,6 @@
 [user]
-	name = Josh Mize
-	email = jgmize@gmail.com
+	name = Blixa Morgan
+	email = blixa@gurustu.co
 
 [alias]
     st = status
@@ -15,4 +15,4 @@
     subup = !git submodule sync && git submodule update --init --recursive
 
 [core]
-    excludesfile = /home/jgmize/.gitignore_global
+    excludesfile = /home/blixa/.gitignore_global
