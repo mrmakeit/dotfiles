@@ -104,7 +104,8 @@ fi
 export EDITOR=vim
 
 # call private bash libraries.
-. _bash_lib/_lib.sh
 if [ -f ~/_bash_lib/_lib.sh ]; then
     . ~/_bash_lib/_lib.sh
 fi
+
+PATH=$HOME/bin/heroku-client/bin/:$PATH
