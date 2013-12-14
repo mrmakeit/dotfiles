@@ -108,4 +108,14 @@ if [ -f ~/_bash_lib/_lib.sh ]; then
     . ~/_bash_lib/_lib.sh
 fi
 
-PATH=$HOME/bin/heroku-client/bin/:$PATH
+# add includes that may be system specific.  I generate mine from
+# another startup repo
+if [ -f ~/.bash_include ]; then
+  . ~/.bash_include
+fi
+
+# include path additions that will be system specific. Again, I
+# generate these externally
+if [ -f ~/.bash_path ]; then
+    . ~/.bash_path
+fi
