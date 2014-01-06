@@ -25,6 +25,8 @@ Bundle 'fugitive.vim'
 "unmet ruby dependency
 "Bundle 'git://git.wincent.com/command-t.git'
 
+colorscheme pablo
+
 filetype plugin on
 
 syntax on

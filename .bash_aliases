@@ -38,7 +38,21 @@ elif [ "$TMUX" ]; then
                 tmux set-environment DISPLAY :0
             fi
         fi
-        tmux new-window -n vim "vim $1 $2 $3 $4 $5 $6"
+        if [ "$DISPLAY" ]; then
+            VIMSERVER=`vim --serverlist`
+            if [ "$VIMSERVER" == "GVIM" ]; then
+                gvim --remote $1
+            elif [ "$VIMSERVER" ]; then
+                echo $VIMSERVER
+                vim --remote $1
+                tmux select-window -t vim
+            else
+                echo "Starting new gvimserver"
+                DISPLAY=$DISPLAY gvim $1 $2 $3
+            fi
+        else
+            tmux new-window -n vim "vim $1 $2 $3 $4 $5 $6"
+        fi
     }
 	ping() { tmux new-window -n "ping $1" "ping $1"; }
 	tail() { tmux new-window -n "$1" "tail -f $1"; }
