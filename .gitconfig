@@ -16,3 +16,5 @@
 
 [core]
     excludesfile = /home/blixa/.gitignore_global
+[color]
+	ui = auto
