@@ -21,3 +21,5 @@ ta() { tmux attach || tmux; }
 rscp() { rsync --progress -r --rsh=ssh $1 $2; }
 gdr() { sudo killall -SIGHUP gunicorn_django; }
 genAndApp() { android create project --target $ANDROIDTARGET --name $1 --path ~/src/$1 --activity $1 --package com.$ANDROIDDOMAIN.$1; }
+nw() { nodewebkit $1; }
+nw_build() { zip -r ../${PWD##*/}.nw *; }
