@@ -1,7 +1,6 @@
 #!/bin/sh
-dotfiles=".ackrc .bash_aliases .bashrc .gitconfig .hgrc .synergy.conf .tmux.conf .vimrc .bash-git"
+dotfiles=".ackrc .bash_aliases .bashrc .gitconfig .hgrc .synergy.conf .tmux.conf .bash-git"
 cd $HOME
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 for f in $dotfiles; do
     ln -sf dotfiles/$f;
 done;
