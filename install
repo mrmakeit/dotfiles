@@ -2,7 +2,6 @@
 dotfiles=".ackrc .bash_aliases .bashrc .gitconfig .hgrc .synergy.conf .tmux.conf .bash-git"
 cd $HOME
 for f in $dotfiles; do
-    ln -sf dotfiles/$f;
+    ln -sf .files/$f;
 done;
 # the command below will sometime lock up during automated deployments
-vim +BundleInstall +qall &>/dev/null
