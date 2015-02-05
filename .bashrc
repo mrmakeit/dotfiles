@@ -103,19 +103,15 @@ fi
 
 export EDITOR=vim
 
-# call private bash libraries.
-if [ -f ~/_bash_lib/_lib.sh ]; then
-    . ~/_bash_lib/_lib.sh
-fi
-
-# add includes that may be system specific.  I generate mine from
-# another startup repo
 if [ -f ~/.bash_include ]; then
   . ~/.bash_include
 fi
 
-# include path additions that will be system specific. Again, I
-# generate these externally
+# call private bash libraries.
+if [ -f ~/_bash_lib/_lib.sh ]; then
+    . ~/_bash_lib/_lib.sh
+fi
+# include path additions that will be system specific
 if [ -f ~/.bash_path ]; then
     . ~/.bash_path
 fi
