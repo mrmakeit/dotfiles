@@ -1,6 +1,7 @@
 [user]
 	name = Blixa Morgan
 	email = blixa@projectmakeit.com
+	signingkey = 558B829A
 
 [alias]
     st = status
@@ -16,5 +17,6 @@
 
 [core]
     excludesfile = /home/blixa/.gitignore_global
+	editor = vim
 [color]
 	ui = auto
