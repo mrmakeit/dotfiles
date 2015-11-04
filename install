@@ -1,5 +1,5 @@
 #!/bin/sh
-dotfiles=".ackrc .bashrc .gitconfig .hgrc .synergy.conf .tmux.conf"
+dotfiles=".bashrc .gitconfig .gitignore .tmux.conf"
 cd $HOME
 for f in $dotfiles; do
     ln -sf .files/$f;

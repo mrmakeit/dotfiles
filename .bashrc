@@ -95,15 +95,3 @@ fi
 if [ -f ~/.bash/bashinc ]; then
 	. ~/.bash/bashinc
 fi
-
-pkill -f gnome-keyring-daemon
-
-if pgrep -F ~/.tmp/gpg-agent.pid > /dev/null
-then
-	. ~/.tmp/gpg-agent
-else
-	killall gpg-agent
-	gpg-agent --daemon --enable-ssh-support > ~/.tmp/gpg-agent
-	pgrep gpg-agent > ~/.tmp/gpg-agent.pid
-	. ~/.tmp/gpg-agent
-fi

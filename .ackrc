@@ -1,4 +1,0 @@
---ignore-dir=htmlcov
---type-set=salt-state=.sls
---type-set=jinja=.jinja
---type-set=coffee=.coffee
