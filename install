@@ -1,7 +1,0 @@
-#!/bin/sh
-dotfiles=".bashrc .gitconfig .gitignore .tmux.conf"
-cd $HOME
-for f in $dotfiles; do
-    ln -sf .files/$f;
-done;
-# the command below will sometime lock up during automated deployments
