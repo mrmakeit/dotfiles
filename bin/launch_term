@@ -1,0 +1,8 @@
+TERM_TYPE=konsole
+TERM_ID=$(xdotool search $TERM_TYPE)
+if [ ! -z "$TERM_ID" ]; then
+	xdotool windowactivate $TERM_ID
+else
+	konsole -e tmux
+fi
+
