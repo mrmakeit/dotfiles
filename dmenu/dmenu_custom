@@ -25,7 +25,7 @@ if [ "$RESULT" = "oath" ]; then
 	xdotool type --clearmodifiers $OUTPUT
 fi
 if [ "$RESULT" = "clear" ]; then
-	$HOME/.bin/clear-opts
+	sudo -k;
 fi
 if [ "$RESULT" = "auth" ]; then
 	sudo -A -v;
