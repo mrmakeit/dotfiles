@@ -13,7 +13,7 @@ if [ "$RESULT" = "pass" ]; then
 	/usr/bin/zsh $HOME/.dmenu/passmenu
 fi
 if [ "$RESULT" = "term" ]; then
-	konsole -e tmux
+	x-terminal-emulator -e tmux new-session -A -s main
 fi
 if [ "$RESULT" = "music" ]; then
 	/usr/bin/zsh $HOME/.dmenu/dmenu_music

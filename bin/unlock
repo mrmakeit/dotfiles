@@ -1,4 +1,2 @@
-sudo swapoff -a
 tomb open /home/blixa/security -k /home/blixa/password.key -g $HOME/.security
-sudo swapoff -a
 tomb open /home/blixa/password -k /home/blixa/password.key -g $HOME/.password-store
