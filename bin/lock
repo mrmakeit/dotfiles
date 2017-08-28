@@ -1,2 +1,0 @@
-sudo /usr/local/bin/tomb close security
-sudo /usr/local/bin/tomb close password
