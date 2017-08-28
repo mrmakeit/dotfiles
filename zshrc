@@ -1,3 +1,4 @@
+[ -z "$TMUX"  ] && { tmux attach -t workspace || exec tmux new-session -s workspace && exit;}
 export ZSH=$HOME/.oh-my-zsh
 export PATH=$PATH:$HOME/.bin
 ZSH_THEME="tjkirch"
