@@ -7,7 +7,6 @@
 # the default umask is set in /etc/profile; for setting the umask
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
-[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -19,4 +18,8 @@ fi
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.bin" ] ; then
     PATH="$HOME/.bin:$PATH"
+fi
+
+if [ -f "$HOME/.tokens" ] ; then
+    source "$HOME/.tokens"
 fi
