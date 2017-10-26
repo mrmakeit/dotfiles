@@ -46,4 +46,5 @@ windows:
   - slack: irssi 
   - hangouts: hangups
   - music: ncmpc
+  - scratchpad: vim +VimwikiIndex /dev/null
   - cli:
