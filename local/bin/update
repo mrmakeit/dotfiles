@@ -1,0 +1,15 @@
+#!/bin/bash
+function commit {
+  git status
+  git pull
+  echo "$1 message (empty to skip):"
+  read msg
+  git add .
+  git commit -m "$msg" #> /dev/null 2> /dev/null
+  git push
+}
+
+cd $HOME/.dotfiles
+commit dotfiles
+cd $HOME/vimwiki
+commit vimwiki
