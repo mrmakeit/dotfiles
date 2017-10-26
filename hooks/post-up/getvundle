@@ -4,4 +4,4 @@ else
 	cd ~/.vim/bundle/Vundle.vim
 	git pull
 fi
-vim +PluginInstall +qall
+( vim +PluginInstall +qall 2> /dev/null > /dev/null )
