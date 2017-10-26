@@ -8,6 +8,11 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'majutsushi/tagbar'
 call vundle#end()   
 filetype plugin indent on
 syntax on
