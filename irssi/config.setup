@@ -1,0 +1,20 @@
+settings = {
+  core = {
+    real_name = "Blixa Morgan";
+    user_name = "mrmakeit";
+    nick = "mrmakeit";
+  };
+  "fe-text" = { actlist_sort = "refnum"; };
+  "perl/core/scripts" = { awl_shared_sbar = "OFF"; };
+};
+chatnets = { SetupZNC = { type = "IRC"; }; };
+servers = (
+  {
+    address = "irc.projectmakeit.com";
+    port = "8443";
+    use_ssl = "yes";
+    ssl_cert = "~/.irssi/certs/znc.pem";
+    ssl_verify = "no";
+    autoconnect = "yes";
+  }
+);
