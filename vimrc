@@ -3,9 +3,11 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'godlygeek/tabular'
 Plugin 'vimwiki/vimwiki'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'plasticboy/vim-markdown'
 call vundle#end()   
 filetype plugin indent on
 syntax on
