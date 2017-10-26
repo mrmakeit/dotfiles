@@ -4,9 +4,9 @@ function commit {
   git pull
   echo "$1 message (empty to skip):"
   read msg
-  git add .
-  git commit -m "$msg" #> /dev/null 2> /dev/null
-  git push
+  git add . > /tmp/gitaddlog 2> /tmp/gitadderror
+  git commit -m "$msg" > /tmp/gitcommitlog 2> /tmp/gitcommiterror
+  git push > /tmp/gitpushlog 2> /tmp/gitpusherror
 }
 
 cd $HOME/.dotfiles
