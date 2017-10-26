@@ -1,4 +1,4 @@
-[ -z "$TMUX"  ] && { tmux attach -t workspace || exec tmux new-session -s workspace && exit;}
+[ -z "$TMUX"  ] && { tmuxinator work && exit;}
 if [ -f "$HOME/.tokens" ] ; then
     source "$HOME/.tokens"
 fi
