@@ -21,3 +21,5 @@ macro pager b '<enter-command>toggle sidebar_visible<enter>'
 bind index B bounce-message
 
 auto_view text/html
+
+set smtp_url="smtp://blixa@projectmakeit.com@box.projectmakeit.com:587/"

@@ -1,0 +1,1 @@
+[ ! -z "$TMUX" ] && { tmux kill-session -t `tmux display-message -p "#S"` && exit;}
