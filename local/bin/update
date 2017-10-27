@@ -13,3 +13,5 @@ cd $HOME/.dotfiles
 commit dotfiles
 cd $HOME/vimwiki
 commit vimwiki
+
+rcup
