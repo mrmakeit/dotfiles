@@ -6,10 +6,13 @@ set sidebar_visible=no
  
 set sidebar_delim='|'
 set sidebar_sort=yes
-set folder=~/mail/
-mailboxes =INBOX \
-=INBOX.Twitter \
-=Sent
+set imap_user = "blixa@projectmakeit.com"
+set from = "blixa@projectmakeit.com"
+set realname = "Blixa Morgan"
+set hostname = box.projectmakeit.co0m
+set folder = "imaps://blixa@projectmakeit.com@box.projectmakeit.com:993"
+set spoolfile = "imaps://blixa@projectmakeit.com@box.projectmakeit.com/INBOX"
+set smtp_url="smtp://blixa@projectmakeit.com@box.projectmakeit.com:587/"
 bind index CP sidebar-prev
 bind index CN sidebar-next
 bind index CO sidebar-open
