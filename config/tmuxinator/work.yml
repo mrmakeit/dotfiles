@@ -48,5 +48,5 @@ windows:
   - hangouts: hangups
   - music: ncmpc
   - scratchpad: vim +VimwikiIndex /dev/null
-  - browser: w3m
+  - browser: w3m duckduckgo.com
   - cli:
