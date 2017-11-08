@@ -13,6 +13,10 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-fugitive'
+Plugin 'jreybert/vimagit'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-rhubarb'
 call vundle#end()   
 filetype plugin indent on
 syntax on
