@@ -11,6 +11,7 @@ ZSH_THEME="tjkirch"
 COMPLETION_WAITING_DOTS="true"
 plugins=(git docker node npm gpg-agent nyan lol pass sudo systemd tmux wd)
 source $ZSH/oh-my-zsh.sh
+source $HOME/.completion/tmuxinator.zsh
 export EDITOR='vim'
 eval "$(hub alias -s)"
 export fpath=(~/.zsh/completions $fpath) 
