@@ -10,7 +10,7 @@ After=sound.target
 
 [Service]
 PermissionsStartOnly=true
-ExecStart=/usr/bin/mopidy 
+ExecStart=/usr/bin/mopidy --config /home/blixa/.config/mopidy
 
 [Install]
 WantedBy=multi-user.target

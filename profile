@@ -23,3 +23,7 @@ fi
 if [ -f "$HOME/.tokens" ] ; then
     source "$HOME/.tokens"
 fi
+
+if [ -d "$HOME/.local_profile" ] ; then
+  source "$HOME/.local_profile"
+fi
