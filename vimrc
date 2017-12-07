@@ -17,6 +17,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'jreybert/vimagit'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-rhubarb'
+Plugin 'mattn/vim-mastodon'
 call vundle#end()   
 filetype plugin indent on
 syntax on
