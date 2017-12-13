@@ -2,6 +2,9 @@
 if [ -f "$HOME/.tokens" ] ; then
     source "$HOME/.tokens"
 fi
+if [ -f "$HOME/.local_profile" ] ; then
+    source "$HOME/.local_profile"
+fi
 if [ -d "$HOME/bin" ]; then
   export PATH=$PATH:$HOME/bin
 fi

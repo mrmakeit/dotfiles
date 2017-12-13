@@ -1,17 +1,16 @@
-#!/bin/bash
-function commit {
-  git status
-  git pull
-  echo "$1 message (empty to skip):"
-  read msg
-  git add . > /tmp/gitaddlog 2> /tmp/gitadderror
-  git commit -m "$msg" > /tmp/gitcommitlog 2> /tmp/gitcommiterror
-  git push > /tmp/gitpushlog 2> /tmp/gitpusherror
-}
+echo "Preparing to run updates"
 
+echo "Updating password database"
+pass git pull
+pass git push
+echo "Fetching latest dotfile changes"
 cd $HOME/.dotfiles
-commit dotfiles
-cd $HOME/vimwiki
-commit vimwiki
-
+git pull
+git push
 rcup
+echo "Begining Sudo processes, please enter password in sudo prompt"
+sudo -v
+echo "Updating installed programs"
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo -k
