@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+shopt -s nullglob globstar
+
+typeit=0
+if [[ $1 == "--type" ]]; then
+  typeit=1
+  shift
+fi
+
+account=$(yubioath|cut -c -37 | sed -e 's/[[:space:]]*$//' | dmenu)
+code=$(yubioath $account| rev | cut -c1-6 | rev)
+
+[[ -n $code ]] || exit
+
+if [[ $typeit -eq 0 ]]; then
+  echo $code | xclip -selection clipboard 2>/dev/null
+else
+  xdotool type --clearmodifiers $code
+fi
+
