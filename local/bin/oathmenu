@@ -8,8 +8,8 @@ if [[ $1 == "--type" ]]; then
   shift
 fi
 
-account=$(yubioath|cut -c -37 | sed -e 's/[[:space:]]*$//' | dmenu)
-code=$(yubioath $account| rev | cut -c1-6 | rev)
+account="$(ykman oath list | dmenu)"
+code=$(ykman oath code "$account"| rev | cut -c1-6 | rev)
 
 [[ -n $code ]] || exit
 
