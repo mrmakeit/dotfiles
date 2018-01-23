@@ -1,4 +1,3 @@
-[ -z "$TMUX"  ] && { tmuxinator work && exit;}
 if [ -f "$HOME/.tokens" ] ; then
     source "$HOME/.tokens"
 fi
