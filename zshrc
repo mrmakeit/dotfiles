@@ -8,13 +8,12 @@ if [ -d "$HOME/bin" ]; then
   export PATH=$PATH:$HOME/bin
 fi
 export ZSH=$HOME/.oh-my-zsh
-export PATH=$PATH:$HOME/.bin:$HOME/.local/bin
 ZSH_THEME="tjkirch"
 COMPLETION_WAITING_DOTS="true"
 plugins=(git docker node npm gpg-agent nyan lol pass sudo systemd tmux wd)
 source $ZSH/oh-my-zsh.sh
 source $HOME/.completion/*.zsh
-export EDITOR='vim'
+source $HOME/.bash_functions.d/*
 eval "$(hub alias -s)"
 export fpath=(~/.zsh/completions $fpath) 
 autoload -U compinit && compinit

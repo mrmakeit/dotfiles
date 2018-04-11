@@ -1,0 +1,15 @@
+
+edt() {
+    if ! (emacsclient -s tty --eval "t" 2>&1 > /dev/null); then
+        emacs --daemon=tty;
+    fi;
+}
+
+et() { edt && TERM=xterm-256color emacsclient -t -s tty "$@"; }
+
+etk() { emacsclient -t -s tty --eval "(save-buffers-kill-emacs)"; }
+
+e() {
+    emacsclient --no-wait "$@" 2>/dev/null || edt && \
+            emacsclient -s tty --no-wait "$@" 2>/dev/null;
+}

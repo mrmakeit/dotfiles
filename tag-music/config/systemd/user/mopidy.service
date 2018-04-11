@@ -13,4 +13,4 @@ PermissionsStartOnly=true
 ExecStart=/usr/bin/mopidy --config /home/blixa/.config/mopidy
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
