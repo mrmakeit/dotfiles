@@ -19,6 +19,10 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-rhubarb'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/vim-mastodon'
+Plugin 'wannesm/wmgraphviz.vim'
+Plugin 'initrc/eclim-vundle'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'nvie/vim-flake8'
 call vundle#end()   
 filetype plugin indent on
 syntax on
