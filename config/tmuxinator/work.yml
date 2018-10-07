@@ -1,7 +1,7 @@
 # ~/.tmuxinator/workspace.yml
 
 name: work
-root: ~/projects
+root: ~/
 
 # Optional tmux socket
 # socket_name: foo
@@ -31,7 +31,7 @@ root: ~/projects
 # tmux_command: byobu
 
 # Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
-startup_window: cli
+startup_window: music
 
 # Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
 # startup_pane: 1
@@ -43,8 +43,6 @@ startup_window: cli
 # post: tmux -CC attach -t workspace
 
 windows:
-  - hangouts: hangups
   - music: ncmpc
   - scratchpad: vim +VimwikiIndex /dev/null
   - browser: w3m duckduckgo.com
-  - cli:
