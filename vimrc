@@ -23,6 +23,8 @@ Plugin 'wannesm/wmgraphviz.vim'
 Plugin 'initrc/eclim-vundle'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'nvie/vim-flake8'
+Plugin 'freitass/todo.txt-vim'
+Plugin 'purescript-contrib/purescript-vim'
 call vundle#end()   
 filetype plugin indent on
 syntax on

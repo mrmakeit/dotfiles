@@ -22,4 +22,4 @@ if [ -d "$HOME/.local_profile" ] ; then
   source "$HOME/.local_profile"
 fi
 
-stty icrnl
+#stty icrnl
