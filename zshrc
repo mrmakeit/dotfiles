@@ -10,7 +10,7 @@ fi
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="tjkirch"
 COMPLETION_WAITING_DOTS="true"
-plugins=(git docker node npm gpg-agent nyan lol pass sudo systemd tmux wd)
+plugins=(git docker node npm gpg-agent lol pass sudo systemd tmux wd)
 source $ZSH/oh-my-zsh.sh
 source $HOME/.completion/*.zsh
 source $HOME/.bash_functions.d/*
