@@ -27,6 +27,7 @@ Plugin 'freitass/todo.txt-vim'
 Plugin 'purescript-contrib/purescript-vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'jamessan/vim-gnupg'
+Plugin 'segeljakt/vim-silicon'
 call vundle#end()   
 filetype plugin indent on
 syntax on

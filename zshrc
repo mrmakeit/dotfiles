@@ -17,3 +17,6 @@ source $HOME/.bash_functions.d/*
 eval "$(hub alias -s)"
 export fpath=(~/.zsh/completions $fpath) 
 autoload -U compinit && compinit
+export MARKER_KEY_GET=^g
+[[ -s "$HOME/.local/share/marker/marker.sh" ]] && source "$HOME/.local/share/marker/marker.sh"
+export SNOWMIX=/usr/local/lib/Snowmix-0.5.1

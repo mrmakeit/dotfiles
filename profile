@@ -22,4 +22,8 @@ if [ -d "$HOME/.local_profile" ] ; then
   source "$HOME/.local_profile"
 fi
 
+PATH=$PATH:$HOME/.local/share/OpenSCAD/libraries/NopSCADlib/scripts
+
 #stty icrnl
+
+export PATH="$HOME/.cargo/bin:$PATH"
